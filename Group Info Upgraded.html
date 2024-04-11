@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Profiles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(img/Background.jpg); /* Replace 'background-image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(237, 237, 237, 0.844); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .person {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .person img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .person-info {
+            display: none;
+        }
+        .show-info-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="person">
+        <img src="img/Garcia.jpg" alt="Selfie">
+        <span class="Garcia">Garcia</span>
+        <button class="show-info-btn">Show Info</button>
+        <div class="person-info">
+            <p>Full Name: Jhon Paul B. Garcia</p>
+            <p>Age: 16</p>
+            <p>Gender: Male</p>
+            <p>Height: 5'5</p>
+            <p>Weight: 96lbs</p>
+            <p>Hobbies: Listening to Music, Playing Basketball</p>
+            <P>Favourite Color: Black</P>
+            <p>Religion: Catholic</p>
+            <p>Future: Become Successful</p>
+            <p>Address: Kabayanan, SanJuan City</p>
+            <p>Birthday: September 09, 2007</p>
+            <p>Gmail: gjcypeij@gmail.com</p>
+        </div>
+    </div>
+    <div class="person">
+        <img src="img/Jhaybie.jpg" alt="Selfie">
+        <span class="Jhaybie">Jhaybie</span>
+        <button class="show-info-btn">Show Info</button>
+        <div class="person-info">
+            <p>Full Name: Jhaybie Socias Garcia</p>
+            <p>Age: 18</p>
+            <p>Gender: Male</p>
+            <p>Height: 5'6</p>
+            <p>Weight: 100lbs</p>
+            <p>Hobbies: Playing Basketball</p>
+            <P>Favourite Color: Black, White</P>
+            <p>Religion: Catholic</p>
+            <p>Future: Seaman</p>
+            <p>Address: Punta Sta.Ana</p>
+            <p>Birthday: December 04, 2005</p>
+            <p>Gmail: garciajhaybie7@gmail.com</p>
+        </div>
+    </div>
+    <div class="person">
+      <img src="img/Reniel.jpg" alt="Selfie">
+        <span class="Reniel">Reniel</span>
+        <button class="show-info-btn">Show Info</button>
+        <div class="person-info">
+          <p>Full Name: Reniel S. Dela Cruz</p>
+          <p>Age: 18</p>
+          <p>Gender: Male</p>
+          <p>Height: 5'8</p>
+          <p>Weight: 207lbs</p>
+          <p>Hobbies: Gym, Playing video games</p>
+          <P>Favourite Color: Black</P>
+          <p>Religion: Catholic</p>
+          <p>Future: Successful Entrepreneur</p>
+          <p>Address: Sta.Lucia, SanJuan City</p>
+          <p>Birthday: September 28, 2005</p>
+          <p>Gmail: renieldelacruz928@gmail.com</p>
+        </div>
+    </div>
+    <div class="person">
+      <img src="img/Tiamson.jpg" alt="Selfie">
+        <span class="Lhian">Lhian</span>
+        <button class="show-info-btn">Show Info</button>
+        <div class="person-info">
+          <p>Full Name: Lhian James R. Tiamson</p>
+          <p>Age: 17</p>
+          <p>Gender: Male</p>
+          <p>Height: 5'7</p>
+          <p>Weight: 154lbs</p>
+          <p>Hobbies: Gym, Playing video games, Watching anime</p>
+          <P>Favourite Color: Matte Black</P>
+          <p>Religion: Catholic</p>
+          <p>Future: IT, Criminology</p>
+          <p>Address: Punta Sta.Ana</p>
+          <p>Birthday: February 20, 2007</p>
+          <p>Gmail: liantiamson@gmail.com</p>
+        </div>
+    </div>
+    <div class="person">
+      <img src="img/Almaden.jpg" alt="Selfie">
+        <span class="Almaden">Almaden</span>
+        <button class="show-info-btn">Show Info</button>
+        <div class="person-info">
+          <p>Full Name: Jomari K. Almaden</p>
+          <p>Age: 16</p>
+          <p>Gender: Male</p>
+          <p>Height: 5'5</p>
+          <p>Weight: 145lbs</p>
+          <p>Hobbies: Playing Basketball, Playing Online Games</p>
+          <P>Favourite Color: Red</P>
+          <p>Religion: Catholic</p>
+          <p>Future: Seaman</p>
+          <p>Address: Brangka ibaba, Mandaluyong City</p>
+          <p>Birthday: September 22, 2007</p>
+          <p>Gmail: jomarikalalo@gmail.com</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<script>
+    const showInfoButtons = document.querySelectorAll('.show-info-btn');
+
+    showInfoButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const personInfo = button.nextElementSibling;
+            personInfo.classList.toggle('person-info');
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+
+ 
+ 
